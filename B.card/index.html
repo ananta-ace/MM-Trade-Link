@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM Trade Link - Mubarak Hossain</title>
+    <style>
+        /* --- Global Styles & Variables --- */
+        :root {
+            --bg-color: #0a0a0a;
+            --text-main: #ffffff;
+            --text-muted: #b3b3b3;
+            --border-color: #333333;
+            --accent: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: var(--bg-color);
+            padding: 20px 0;
+        }
+
+        /* --- Section 1: Contact Information --- */
+        .header-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+
+        /* --- NEW LOGO IMAGE STYLING --- */
+        .logo-image {
+            width: 180px; /* Adjust size here if needed */
+            height: auto;
+            margin-bottom: 20px;
+            /* If your logo has a white background and you want it transparent, 
+               you might need a transparent PNG file */
+        }
+
+        /* Contact Details */
+        .contact-info h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-info h2 {
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .contact-info a {
+            color: var(--text-main);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-info a:hover {
+            color: var(--text-muted);
+        }
+
+        /* --- Section 2: Services & Products --- */
+        .services-title {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .services-title span {
+            border-bottom: 3px solid var(--text-main);
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .service-column h3 {
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .service-column ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .service-column li {
+            font-size: 15px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+            color: var(--text-muted);
+        }
+
+        .service-column li::before {
+            content: "•";
+            color: var(--text-main);
+            position: absolute;
+            left: 0;
+            font-size: 20px;
+            line-height: 1;
+            top: -2px;
+        }
+
+        .sub-category {
+            margin-top: 25px;
+        }
+
+        /* --- Footer --- */
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        /* --- Responsive Design (Tablets & Desktops) --- */
+        @media (min-width: 768px) {
+            .header-section {
+                flex-direction: row;
+                text-align: left;
+                justify-content: center;
+                gap: 50px;
+                padding: 40px 0;
+            }
+
+            .logo-image {
+                margin-bottom: 0;
+                flex-shrink: 0;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+
+            /* Add vertical line between columns on desktop */
+            .service-column:first-child {
+                border-right: 1px solid var(--border-color);
+                padding-right: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header Section (Card Front) -->
+        <header class="header-section">
+            
+            <!-- NEW IMAGE TAG HERE -->
+            <!-- Make sure "logo.png" matches the exact name of your saved image file -->
+            <img src="LOGO.png" alt="MMTL Logo" class="logo-image">
+
+            <div class="contact-info">
+                <h1>Mubarak Hossain</h1>
+                <h2>Lead Engineer</h2>
+                <p><a href="tel:+8801721737778">+880 1721-737778</a></p>
+                <p><a href="mailto:mubarakhossain@gmail.com">mubarakhossain@gmail.com</a></p>
+                <p>Rajendrapur, Gazipur</p>
+            </div>
+        </header>
+
+        <!-- Services Section (Card Back) -->
+        <main>
+            <h2 class="services-title"><span>Industrial Solutions & Supplies</span></h2>
+            
+            <div class="services-grid">
+                
+                <!-- Column 1 -->
+                <div class="service-column">
+                    <h3>Engineering & Equipment</h3>
+                    <ul>
+                        <li>Industrial Cooling Towers & Accessories</li>
+                        <li>Generator Heat Exchanger Plates & Gaskets</li>
+                        <li>Compressor Filters & Air/Oil Separators</li>
+                        <li>Generator Air Filters</li>
+                        <li>Industrial Machinery Spare Parts</li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="service-column">
+                    <h3>Water & Chemical Solutions</h3>
+                    <ul>
+                        <li>Water Treatment Plants & Spare Parts</li>
+                        <li>Drinking Water Treatment Plants (RO Systems)</li>
+                        <li>Boiler Water Treatment Chemicals</li>
+                        <li>Generator & Chiller Cooling Water Treatment Chemicals</li>
+                        <li>Heat Exchanger & Chiller Cleaning Chemicals</li>
+                    </ul>
+
+                    <div class="sub-category">
+                        <h3>Lubricants</h3>
+                        <ul>
+                            <li>Industrial Lubricants<br>Shell • BP • Castrol</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Footer / Branding -->
+        <footer class="footer">
+            <p><strong>MM TRADE LINK</strong></p>
+            <p><em>Our Vision - Our Best Service</em></p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
